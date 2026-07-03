@@ -3,7 +3,7 @@ const BASE = location.hostname === "127.0.0.1"
 : "/cozy-organizer";
 const link = document.createElement("link");
 link.rel = "stylesheet";
-link.href = BASE + "css/game.css";
+link.href = BASE + "css/level1.css";
 document.head.appendChild(link);
 
 const grid = document.getElementById("grid")  //网格容器

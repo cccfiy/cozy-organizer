@@ -1,0 +1,36 @@
+#game{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:700px;
+  padding:40px;
+}
+
+#leftPanel, #rightPanel{
+  width:200px;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+.item{
+  font-size:60px;
+  cursor:grab;
+  user-select:none;
+}
+
+#centerArea{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#tray{
+  width:360px;
+  height:360px;
+  border-radius:50%;
+  background: radial-gradient(circle, #fff 30%, #f3d5c0);
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  position:relative;
+}
