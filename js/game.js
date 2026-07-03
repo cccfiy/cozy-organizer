@@ -1,3 +1,11 @@
+const BASE = location.hostname === "127.0.0.1"
+? "/same/"
+: "/cozy-organizer";
+const link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = BASE + "css/game.css";
+document.head.appendChild(link);
+
 const grid = document.getElementById("grid")  //网格容器
 const score = document.getElementById("score")  //分数显示区
 const items = document.querySelectorAll(".item")  //所有可拖拽的物品
