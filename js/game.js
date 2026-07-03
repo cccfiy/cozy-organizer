@@ -2,10 +2,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const BASE = location.hostname === "127.0.0.1"
     ? "/same/"
     : "/cozy-organizer/";
-    
+
   const link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = BASE + "css/level1.css";
+  link.href = BASE + "css/game.css";
   document.head.appendChild(link);
 });
 
