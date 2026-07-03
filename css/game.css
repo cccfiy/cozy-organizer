@@ -480,3 +480,14 @@ transform:translateY(-3px);
 background:#ffc7da;
 
 }
+
+#loading{
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 9999;
+}

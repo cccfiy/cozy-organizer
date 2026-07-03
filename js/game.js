@@ -1,14 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const BASE = location.hostname === "127.0.0.1"
-    ? "/same/"
-    : "/cozy-organizer/";
-
-  const link = document.createElement("link");
-  link.rel = "stylesheet";
-  link.href = BASE + "css/game.css";
-  document.head.appendChild(link);
-});
-
 const grid = document.getElementById("grid")  //网格容器
 const score = document.getElementById("score")  //分数显示区
 const items = document.querySelectorAll(".item")  //所有可拖拽的物品
@@ -308,5 +297,10 @@ const back = document.getElementById("back")
 back.onclick=()=>{
 window.location.href="../menu.html"
 }
+
+window.addEventListener("load", () => {
+  const loading = document.getElementById("loading");
+  if (loading) loading.style.display = "none";
+});
 
 update()
