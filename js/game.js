@@ -1,10 +1,13 @@
-const BASE = location.hostname === "127.0.0.1"
-? "/same/"
-: "/cozy-organizer/";
-const link = document.createElement("link");
-link.rel = "stylesheet";
-link.href = BASE + "css/level1.css";
-document.head.appendChild(link);
+window.addEventListener("DOMContentLoaded", () => {
+  const BASE = location.hostname === "127.0.0.1"
+    ? "/same/"
+    : "/cozy-organizer/";
+    
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = BASE + "css/level1.css";
+  document.head.appendChild(link);
+});
 
 const grid = document.getElementById("grid")  //网格容器
 const score = document.getElementById("score")  //分数显示区
